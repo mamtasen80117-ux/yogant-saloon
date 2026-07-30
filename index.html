@@ -138,27 +138,32 @@ loading="lazy">
 </section>
 <section class="booking" id="booking">
     <h2>Book an Appointment</h2>
+<form action="https://formsubmit.co/mamtasen80117@gmail.com" method="POST">
 
-    <form action="https://formsubmit.co/mamtasen80117@gmail.com" method="POST">>
-        <input type="text" placeholder="Your Name" required>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="tel" placeholder="Mobile Number" required>
+    <input type="tel" name="phone" placeholder="Mobile Number" required>
 
-        <select required>
-            <option>Select Service</option>
-            <option>Hair Cut</option>
-            <option>Beard Styling</option>
-            <option>Facial</option>
-            <option>Massage</option>
-            <option>other
-            </option>
-        </select>
+    <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Hair Cut</option>
+        <option>Beard Styling</option>
+        <option>Facial</option>
+        <option>Massage</option>
+        <option>Other</option>
+    </select>
 
-        <input type="date" required>
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_subject" value="New Appointment Booking - Yogant Saloon">
-        <button type="submit">Book Now</button>
-    </form>
+    <input type="date" name="date" required>
+
+    <input type="time" name="time" required>
+
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Appointment Booking - Yogant Saloon">
+
+    <button type="submit">Book Now</button>
+
+</form>
+    
 </section>
 
 <script src="script.js"></script>
